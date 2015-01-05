@@ -65,6 +65,9 @@ public class HttpActivity extends Activity {
 				    Map<String, List<String>> formatInfo = getUrlParameters(formats[0]);
 				    List<String> urlarr = formatInfo.get("url");
 				    String urlstr = urlarr.get(0);
+				    //Pattern pattern = Pattern.compile('^(?:http:\/\/|www\.|https:\/\/)([^\/]+)');	
+				    String[] urlParts = urlstr.split("//?");
+				    
 				    
 				    //String[] formats = videoInfo.get("url_encoded_fmt_stream_map").split(",");
 				    
